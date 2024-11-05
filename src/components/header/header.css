@@ -1,0 +1,40 @@
+#header {
+  width: 49%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 12%;
+  position: fixed;
+}
+
+#header > img {
+  width: 110px;
+  height: auto;
+  margin-left: -150px;
+}
+
+@media (max-width: 1200px) {
+  #header {
+    padding-left: 7%;
+  }
+  #header > img {
+    margin-left: -90px;
+  }
+}
+
+@media (max-width: 1022px) {
+  #header {
+    position: relative;
+    width: 100%;
+  }
+  #header > img {
+    margin-left: -60px;
+  }
+}
+@media (max-width: 600px) {
+  #header > img {
+    margin-left: -30px;
+  }
+}

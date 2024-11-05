@@ -1,0 +1,8 @@
+#skills {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: var(--pf-gap-s);
+}

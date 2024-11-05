@@ -1,0 +1,77 @@
+#projects {
+  width: 100%;
+}
+
+#projects > h2 {
+  padding-top: 130px;
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--pf-color-2);
+  padding-bottom: var(--pf-padding-m);
+}
+
+.projects-article {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: var(--pf-gap-m);
+}
+/* NOTA - He creado este contenedor para poder rediseñar cada proyecto porque al incluir el enlace, each-project ha dejado de funcionar */
+
+.link-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: row;
+  width: 100%;
+  gap: var(--pf-gap-m);
+  padding: 20px;
+}
+
+.each-project {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: row;
+  width: 100%;
+  gap: var(--pf-gap-m);
+  padding: 20px;
+}
+
+.each-project:hover {
+  background-color: var(--pf-bg-color-2);
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.each-project:hover h4 {
+  color: var(--pf-color-1);
+  transition: color 0.3s ease;
+}
+
+.each-project:last-of-type {
+  margin-bottom: var(--pf-margin-xl);
+}
+
+@media (max-width: 1022px) {
+  #projects > h2 {
+    padding-top: 0;
+    margin-top: var(--pf-margin-xl);
+  }
+}
+
+@media (max-width: 650px) {
+  .each-project {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .each-project:hover {
+    background-color: transparent;
+    border-radius: 0;
+  }
+  .link-container {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}

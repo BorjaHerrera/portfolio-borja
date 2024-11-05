@@ -1,0 +1,81 @@
+.course-name {
+  width: 40%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: var(--pf-gap-xs);
+  cursor: pointer;
+  padding-left: var(--pf-padding-s);
+  position: relative;
+}
+
+.course-name > h4 {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: var(--pf-color-3);
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+  padding-left: 30px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.course-name > h4::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: var(--pf-color-3);
+  transition: color 0.3s ease;
+}
+
+.course-name > h4:hover::before,
+.course-name > h4:focus::before,
+.course-name > h4:active::before {
+  color: var(--pf-color-1);
+}
+
+.course-name > h4:hover,
+.course-name > h4:focus,
+.course-name > h4:active {
+  color: var(--pf-color-1);
+  font-weight: normal;
+  background-color: var(--pf-bg-color-2);
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 650px) {
+  .course-name {
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 0;
+    gap: var(--pf-gap-m);
+  }
+
+  .course-name > h4::before {
+    content: none;
+    position: static;
+    transform: none;
+    transition: none;
+  }
+
+  .course-name > h4 {
+    padding-left: 0px;
+    font-size: 1.1rem;
+  }
+
+  .course-name > h4:hover,
+  .course-name > h4:focus,
+  .course-name > h4:active {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,28 @@
+#nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: var(--pf-margin-s);
+  margin-bottom: var(--pf-margin-s);
+}
+
+@media (max-width: 500px) {
+  #nav {
+    margin-top: var(--pf-margin-m);
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 356px) {
+  #nav {
+    margin-top: var(--pf-margin-xs);
+  }
+}
+
+@media (max-width: 350px) {
+  #nav {
+    margin-top: var(--pf-margin-s);
+  }
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+  /* BRANDING COLORS */
+  --pf-color-1: #f5ff1a;
+  --pf-color-2: #c6d1ec;
+  --pf-color-3: #899bbc;
+  --pf-color-button: #001838;
+  --pf-bg-color: #0b192f;
+  --pf-bg-color-2: #112240;
+  --pf-bg-color-button: #eafe31;
+
+  /* SPACINGS */
+  --pf-margin-xxs: 5px;
+  --pf-margin-xs: 10px;
+  --pf-margin-s: 20px;
+  --pf-margin-m: 30px;
+  --pf-margin-l: 40px;
+  --pf-margin-xl: 50px;
+  --pf-margin-xxl: 100px;
+  --pf-margin-xxxl: 150px;
+  --pf-margin-xxxxl: 180px;
+
+  --pf-padding-xxs: 5px;
+  --pf-padding-xs: 10px;
+  --pf-padding-s: 20px;
+  --pf-padding-m: 30px;
+  --pf-padding-l: 40px;
+  --pf-padding-xl: 60px;
+  --pf-padding-xxl: 100px;
+  --pf-padding-xxxl: 140px;
+
+  --pf-gap-xxs: 5px;
+  --pf-gap-xs: 10px;
+  --pf-gap-s: 20px;
+  --pf-gap-m: 30px;
+  --pf-gap-l: 40px;
+  --pf-gap-xl: 50px;
+  --pf-gap-xxl: 100px;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  min-height: 100svh;
+  background-color: var(--pf-bg-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#main {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+::selection {
+  background-color: var(--pf-bg-color-button);
+  color: var(--pf-color-button);
+}
+
+@media (max-width: 1022px) {
+  #main {
+    display: flex;
+    flex-direction: column;
+  }
+}

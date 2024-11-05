@@ -1,0 +1,79 @@
+#nav > ul > li > a {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  width: 100%;
+  height: auto;
+  color: var(--pf-color-3);
+  font-size: 0.8rem;
+  margin-bottom: var(--pf-margin-s);
+  margin-left: var(--pf-margin-xl);
+  transition: transform 0.3s ease, color 0.3s ease;
+  padding-right: var(--pf-padding-s);
+  font-weight: normal;
+}
+
+#nav > ul > li > a::before {
+  content: '';
+  position: absolute;
+  right: 160px;
+  top: 50%;
+  width: 30px;
+  height: 0.5px;
+  margin-right: 5px;
+  background-color: var(--pf-color-3);
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+
+#nav > ul > li > a:hover,
+#nav > ul > li > a:focus,
+#nav > ul > li > a:active {
+  color: var(--pf-color-2);
+  transform: translateX(15%);
+  font-weight: bold;
+}
+
+#nav > ul > li > a:hover::before,
+#nav > ul > li > a:focus::before,
+#nav > ul > li > a:active::before {
+  width: 50px;
+  height: 2px;
+  background-color: var(--pf-color-2);
+}
+
+@media (max-width: 1092px) {
+  #nav > ul > li:last-child > a {
+    margin-bottom: var(--pf-margin-xxs);
+  }
+}
+
+@media (max-width: 1022px) {
+  #nav > ul > li:last-child > a {
+    margin-bottom: var(--pf-margin-xl);
+  }
+}
+
+@media (max-width: 760px) {
+  #nav > ul > li:last-child > a {
+    margin-bottom: var(--pf-margin-s);
+  }
+}
+
+@media (max-width: 500px) {
+  #nav > ul > li:last-child > a {
+    margin-bottom: var(--pf-margin-m);
+  }
+}
+
+@media (max-width: 400px) {
+  #nav > ul > li:last-child > a {
+    margin-bottom: var(--pf-margin-l);
+  }
+}
+
+@media (max-width: 274px) {
+  #nav > ul > li > a {
+    margin-bottom: var(--pf-margin-xs);
+  }
+}

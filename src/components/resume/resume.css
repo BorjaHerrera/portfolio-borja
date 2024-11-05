@@ -1,0 +1,25 @@
+#resume {
+  width: 60%;
+  height: 100svh;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  margin-left: 48%;
+  padding-right: 12%;
+  margin-top: var(--pf-margin-xxs);
+}
+@media (max-width: 1200px) {
+  #resume {
+    padding-right: 7%;
+  }
+}
+
+@media (max-width: 1022px) {
+  #resume {
+    width: 100%;
+    margin-left: 0%;
+    padding-left: 7%;
+  }
+}

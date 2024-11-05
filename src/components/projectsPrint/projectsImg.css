@@ -1,0 +1,34 @@
+.project-img {
+  width: 30%;
+  min-width: 140px;
+  height: auto;
+  padding-top: var(--pf-padding-xxs);
+}
+
+.project-img > img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-height: 120px;
+  object-fit: cover;
+  border: 2px solid var(--pf-color-1);
+  border-radius: 4%;
+}
+
+@media (max-width: 1022px) {
+  .project-img > img {
+    max-height: 150px;
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-img {
+    width: 40%;
+    min-width: 180px;
+    margin-bottom: var(--pf-margin-l);
+  }
+
+  .project-img > img {
+    min-height: 100px;
+  }
+}

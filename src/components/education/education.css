@@ -1,0 +1,36 @@
+#education {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+#education > h2 {
+  padding-top: 130px;
+  width: 100%;
+  font-size: 1.5rem;
+  color: var(--pf-color-2);
+  padding-bottom: var(--pf-padding-m);
+}
+
+.course-info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+@media (max-width: 1022px) {
+  #education > h2 {
+    padding-top: 0;
+    margin-top: var(--pf-margin-xl);
+  }
+}
+
+@media (max-width: 650px) {
+  .course-info {
+    flex-direction: column;
+  }
+}
